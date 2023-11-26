@@ -1,3 +1,5 @@
+package Lab_1;
+
 public class Q7 {
     private String name ;
 
@@ -7,7 +9,7 @@ public class Q7 {
 
     @Override
     public String toString() {
-        return "Q7{" +
+        return "Lab_1.Q7{" +
                 "name='" + name + '\'' +
                 '}';
     }

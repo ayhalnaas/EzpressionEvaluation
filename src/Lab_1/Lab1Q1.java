@@ -1,3 +1,5 @@
+package Lab_1;
+
 import java.util.Scanner;
 
 public class Lab1Q1 {

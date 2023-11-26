@@ -1,3 +1,5 @@
+package Lab_1;
+
 public class Lab1Q8 {
     //Write a short Java method that counts the number
     // of vowels in a given character string.

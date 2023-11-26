@@ -1,3 +1,5 @@
+package Lab_1;
+
 public class Q3 {
     private static int[] student={1,2,3};
 

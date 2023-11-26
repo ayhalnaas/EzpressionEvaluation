@@ -1,3 +1,5 @@
+package Lab_1;
+
 public class Q5 {
     private static int[] student={1,2,3};
     public  static void PrintNum(){

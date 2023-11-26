@@ -1,5 +1,7 @@
+package Lab_1;
+
 public class CreditCard {
-    //1-Modify the CreditCard class from Code Fragment 1.5 to
+    //1-Modify the Lab_1.CreditCard class from Code Fragment 1.5 to
     // include a method that updates the credit limit.
 
     private double limit;
@@ -16,7 +18,7 @@ public class CreditCard {
         return balance;
     }
 
-    //2-Modify the CreditCard class from Code Fragment 1.5 so that it ignores
+    //2-Modify the Lab_1.CreditCard class from Code Fragment 1.5 so that it ignores
     // any request to process a negative payment amount.
     public void process_Payment_amount(double amount) {
             if (amount > 0){

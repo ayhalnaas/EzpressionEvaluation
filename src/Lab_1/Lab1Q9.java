@@ -1,3 +1,5 @@
+package Lab_1;
+
 public class Lab1Q9 {
     //Write a short Java method that
     // uses a StringBuilder instance to remove
