@@ -1,13 +1,11 @@
-package exp_evaluation;
-import java.lang.String;
-import java.util.Scanner;
+package ass4singlylinkedlist;
 
 import static java.lang.Character.isDigit;
 import static java.lang.Character.isLetter;
 
 public class InfixToPostfix {
 
-    static LinkedStack<Character> stk = new LinkedStack<>();
+    static Linkedstack<Character> stk = new Linkedstack<>();
 
     public static int priority(char c){
          if (c == '+' || c == '-')return 1;

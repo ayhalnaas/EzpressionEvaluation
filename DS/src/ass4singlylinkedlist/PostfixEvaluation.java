@@ -1,10 +1,11 @@
-package exp_evaluation;
+package ass4singlylinkedlist;
+
 import static java.lang.Character.isDigit;
 
-import java.lang.String;
+//q3,q5 lab7
+public class PostfixEvaluation {
 
-public class PrefixEvaluation {
-    static LinkedStack<Float> stk = new LinkedStack<>();
+    static Linkedstack<Float> stk = new Linkedstack<>();
     public static Float MathOperation ( Float op1 , Float op2 ,char operation ) {
         switch (operation) {
             case '+': return op1 + op2;
@@ -15,18 +16,18 @@ public class PrefixEvaluation {
         return  new Float(-1);
 
     }
-    public static float prefix_evaluation(String exp){
+    public static float postfix_evaluation(String exp){
         char[] parts = exp.toCharArray();
 
-        for (int i = exp.length() -1; i >=0; i--) {
+        for (int i = 0; i < exp.length(); i++) {
             if (isDigit(parts[i])) {
-                stk.push((float) parts[i] -'0');//casting
+                stk.push((float) parts[i] -'0');
             }
             else {
-                float op1 = stk.top();
+                float op2 = stk.top();
                 stk.pop();
 
-                float op2 = stk.top();
+                float op1 = stk.top();
                 stk.pop();
 
                 float result = MathOperation(op1,op2,parts[i]);
@@ -37,8 +38,8 @@ public class PrefixEvaluation {
     }
 
     public static void main(String[] args) {
-        String PrefixExpression = "*4+39";
-        System.out.println(prefix_evaluation(PrefixExpression));
+        String PostfixExpression = "52+83-*4/";
+        System.out.println(postfix_evaluation(PostfixExpression));
     }
 
 }

@@ -19,7 +19,7 @@ public class InfixToPrefix {
         char[] parts = exp.toCharArray();
         String output = " ";
         for (int i = exp.length() - 1; i >= 0; i--) {
-            if (parts[i] == ' ') continue;
+            if (parts[i] == ' ') continue ;
             else {
                 stk.push(parts[i]);
                 output += stk.top();
@@ -63,7 +63,7 @@ public class InfixToPrefix {
     }
 
     public static void main(String[] args) {
-        String infixExpression = ("3+(7-2)");
+        String infixExpression = ("4*(3+9)");
         System.out.println(infix_to_prefix(infixExpression));
 
     }
